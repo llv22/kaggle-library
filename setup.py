@@ -3,7 +3,8 @@ import os.path as op
 
 from setuptools import setup
 
-here = op.abspath(op.dirname(__file__))
+# refer to https://stackoverflow.com/questions/16771894/python-nameerror-global-name-file-is-not-defined
+here = op.abspath(op.dirname('__file__'))
 
 # Get the long description from the README file
 with io.open(op.join(here, 'README.md'), mode='rt', encoding='utf-8') as f:
@@ -11,7 +12,7 @@ with io.open(op.join(here, 'README.md'), mode='rt', encoding='utf-8') as f:
 
 setup(
     name='kaggleml',
-    version='0.dev',
+    version='0.dev0',
     description='kaggleml utility library',
     long_description=long_description,
     long_description_content_type='text/markdown',
