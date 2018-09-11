@@ -1,3 +1,9 @@
+"""
+KaggleML to display loss in learning phase
+"""
+
+__authors__ = ['Orlando, Ding']
+
 from IPython import display
 from matplotlib import pyplot as plt
 
